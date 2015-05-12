@@ -13,4 +13,8 @@ You can even use it for something REALLY practical like finding out when your Bo
 
 <img src="https://dl.dropboxusercontent.com/u/20116434/Arrived_002.PNG">
 
+<h4>Video</h4>
+
+https://www.youtube.com/watch?v=HyrehmBLmcQ
+
 
