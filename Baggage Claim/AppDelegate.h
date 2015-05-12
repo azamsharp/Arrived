@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "UIColor+Additions.h"
+#import "BaggageService.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

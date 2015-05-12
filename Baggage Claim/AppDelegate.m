@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "Baggage.h"
 
 @interface AppDelegate ()
 
@@ -14,10 +15,57 @@
 
 @implementation AppDelegate
 
-
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [self updateBaggageForNotification:launchOptions];
+    
+    [self askForPermissions];
+    [self setup];
+    
     return YES;
+}
+
+-(void) updateBaggageForNotification:(NSDictionary *) userInfo {
+    
+    NSData *baggageData =  [userInfo valueForKey:@"Baggage"];
+    
+    if(baggageData != nil) {
+        
+        Baggage *baggage = (Baggage *) [NSKeyedUnarchiver unarchiveObjectWithData:baggageData];
+        baggage.hasArrived = YES;
+        baggage.hasNotificationBeenSent = YES;
+        
+        [BaggageService update:baggage];
+    }
+
+}
+
+-(void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    [self updateBaggageForNotification:notification.userInfo];
+    
+    
+}
+
+-(void) askForPermissions {
+    
+    if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) {
+        [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound|UIUserNotificationTypeBadge
+                                                                                                              categories:nil]];
+    }
+
+}
+
+
+
+-(void) setup {
+    
+    [[UINavigationBar appearance] setBarTintColor:[UIColor colorFromHexString:@"E53E18"]];
+    
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} ];
+    
+    [[UINavigationBar appearance] setTintColor:[UIColor whiteColor]];
+    
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application {
