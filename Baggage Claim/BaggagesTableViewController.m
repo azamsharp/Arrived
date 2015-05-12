@@ -214,7 +214,7 @@
     
     if(baggage.hasArrived) {
         cell.hasArrivedView.backgroundColor = [UIColor colorFromHexString:@"39E54D"];
-        cell.hasArrivedLabel.text = @"DELIVERED";
+        cell.hasArrivedLabel.text = @"ARRIVED";
     }
     else {
         cell.hasArrivedView.backgroundColor = [UIColor redColor];

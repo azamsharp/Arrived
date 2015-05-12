@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D6F3FDB7-111E-4D1E-A712-8BBD24804801</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Arrived</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>FD0E3762BBCC786660FA5720652BE80A9BADD02E</key>
+		<string>https://github.com/azamsharp/Arrived.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Arrived.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>FD0E3762BBCC786660FA5720652BE80A9BADD02E</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/azamsharp/Arrived.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>FD0E3762BBCC786660FA5720652BE80A9BADD02E</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>FD0E3762BBCC786660FA5720652BE80A9BADD02E</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Arrived</string>
+		</dict>
+	</array>
+</dict>
+</plist>
