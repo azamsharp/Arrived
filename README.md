@@ -17,4 +17,10 @@ You can even use it for something REALLY practical like finding out when your Bo
 
 https://www.youtube.com/watch?v=HyrehmBLmcQ
 
+<h4>Don't have an iBeacon</h4>
+No worries! You can treat your Mac as an iBeacon using the following Mac application. 
+
+https://github.com/timd/MactsAsBeacon
+
+
 
