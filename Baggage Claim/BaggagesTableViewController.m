@@ -97,7 +97,6 @@
 -(UITableViewCellEditingStyle) tableView:(UITableView *)tableView editingStyleForRowAtIndexPath:(NSIndexPath *)indexPath {
     
     return UITableViewCellEditingStyleDelete;
-    
 }
 
 -(void) stopMonitoringBaggage:(Baggage *) baggage {
@@ -136,7 +135,7 @@
     
     Baggage *baggage = [self baggageByMajorIdAndMinorId:region.major.intValue minor:region.minor.intValue];
     
-    if(!baggage.hasArrived && !baggage.hasNotificationBeenSent) {
+    if(!baggage.hasArrived) {
         
         baggage.hasArrived = YES;
         [BaggageService update:baggage];
@@ -164,6 +163,10 @@
     localNotification.userInfo = @{@"Baggage":[NSKeyedArchiver archivedDataWithRootObject:baggage]};
     [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
     
+    // update the baggage count
+    int noOfArrivedBaggages = [[_baggages filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.hasArrived = YES"]] count];
+    
+   // [[UIApplication sharedApplication] setApplicationIconBadgeNumber:noOfArrivedBaggages];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -185,6 +188,15 @@
         
         addNewBaggageTableViewController.delegate = self;
         
+    }
+    else if([segue.identifier isEqualToString:@"BaggageDetailsSegue"]) {
+        
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        Baggage *baggage = [_baggages objectAtIndex:indexPath.row];
+        
+        UINavigationController *navigationController = (UINavigationController *) segue.destinationViewController;
+        BaggageDetailsViewController *baggageDetailsViewController = [[navigationController viewControllers] objectAtIndex:0];
+        baggageDetailsViewController.baggage = baggage;
     }
     
 }

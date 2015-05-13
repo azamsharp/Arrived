@@ -135,7 +135,7 @@
             </objects>
             <point key="canvasLocation" x="3873" y="342"/>
         </scene>
-        <!--Arrvied-->
+        <!--Arrived-->
         <scene sceneID="Z8b-RY-PyG">
             <objects>
                 <tableViewController id="z8i-yg-vbr" customClass="BaggagesTableViewController" sceneMemberID="viewController">
@@ -144,7 +144,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BaggageCell" rowHeight="250" id="55f-HQ-QMb" customClass="BaggageTableViewCell">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="BaggageCell" rowHeight="250" id="55f-HQ-QMb" customClass="BaggageTableViewCell">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="55f-HQ-QMb" id="GuK-XN-LlI">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -185,7 +185,7 @@
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJ5-Go-ewt">
                                             <rect key="frame" x="176" y="99" width="416" height="90"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-Wl-rG9">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-Wl-rG9">
                                                     <rect key="frame" x="8" y="26" width="400" height="38"/>
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -235,7 +235,7 @@
                             <outlet property="delegate" destination="z8i-yg-vbr" id="XmP-RU-lnd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Arrvied" id="1Pb-2O-KRq">
+                    <navigationItem key="navigationItem" title="Arrived" id="1Pb-2O-KRq">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="BWd-cu-KEd">
                             <connections>
                                 <segue destination="Tqq-5K-q38" kind="presentation" identifier="AddNewBaggageSegue" id="lOG-0K-HUc"/>
@@ -246,6 +246,59 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0rT-qg-g6j" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2335" y="337"/>
+        </scene>
+        <!--Baggage Details View Controller-->
+        <scene sceneID="1dm-x7-EzT">
+            <objects>
+                <viewController id="VNu-Sr-9Ze" customClass="BaggageDetailsViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="qU4-bQ-ceO"/>
+                        <viewControllerLayoutGuide type="bottom" id="imJ-it-6hy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H6D-kk-xSE">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8ak-Sk-bp7">
+                                <rect key="frame" x="16" y="255" width="568" height="89"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GU-Wb-qAk">
+                                        <rect key="frame" x="8" y="30" width="552" height="30"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="27"/>
+                                        <state key="normal" title="Stop Monitoring">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.90310801630434778" green="0.24394233547259539" blue="0.083109306448042666" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="1GU-Wb-qAk" firstAttribute="leading" secondItem="8ak-Sk-bp7" secondAttribute="leadingMargin" id="Ft3-xn-suC"/>
+                                    <constraint firstItem="1GU-Wb-qAk" firstAttribute="top" secondItem="8ak-Sk-bp7" secondAttribute="top" constant="30" id="HEj-cU-11r"/>
+                                    <constraint firstAttribute="bottom" secondItem="1GU-Wb-qAk" secondAttribute="bottom" constant="29" id="ao2-GQ-p7i"/>
+                                    <constraint firstItem="1GU-Wb-qAk" firstAttribute="trailing" secondItem="8ak-Sk-bp7" secondAttribute="trailingMargin" id="cxt-Ka-BF5"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="imJ-it-6hy" firstAttribute="top" secondItem="8ak-Sk-bp7" secondAttribute="bottom" constant="256" id="8N6-wV-1nv"/>
+                            <constraint firstItem="8ak-Sk-bp7" firstAttribute="top" secondItem="qU4-bQ-ceO" secondAttribute="bottom" constant="191" id="HBh-qw-0au"/>
+                            <constraint firstItem="8ak-Sk-bp7" firstAttribute="trailing" secondItem="H6D-kk-xSE" secondAttribute="trailingMargin" id="ZcM-Vq-iPH"/>
+                            <constraint firstItem="8ak-Sk-bp7" firstAttribute="leading" secondItem="H6D-kk-xSE" secondAttribute="leadingMargin" id="hqt-sY-dmF"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="eTr-cx-ysY">
+                        <barButtonItem key="leftBarButtonItem" title="Close" id="3b9-ue-PPN">
+                            <connections>
+                                <action selector="close" destination="VNu-Sr-9Ze" id="BNe-Z0-z9j"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9T5-8N-P89" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3951" y="-370"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uI4-uV-o2Y">
@@ -297,6 +350,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GrE-pH-DUa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1523" y="340"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ZBP-Ms-xLN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3AX-fx-71d" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="GpE-5J-hm2">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="VNu-Sr-9Ze" kind="relationship" relationship="rootViewController" id="Z3H-V5-12u"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jki-Zu-R5B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3139" y="-370"/>
         </scene>
     </scenes>
     <resources>

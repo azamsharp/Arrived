@@ -13,6 +13,7 @@
 #import "AddNewBaggageTableViewController.h"
 #import "BaggageService.h"
 #import "UIColor+Additions.h"
+#import "BaggageDetailsViewController.h"
 
 @import CoreLocation;
 

@@ -22,6 +22,7 @@
     [self askForPermissions];
     [self setup];
     
+    
     return YES;
 }
 
@@ -36,6 +37,15 @@
         baggage.hasNotificationBeenSent = YES;
         
         [BaggageService update:baggage];
+        
+        NSMutableArray *baggages = [BaggageService getAll];
+        int noOfArrivedBaggages = [[baggages filteredArrayUsingPredicate:[NSPredicate predicateWithFormat:@"SELF.hasArrived = YES"]] count];
+        
+        if(noOfArrivedBaggages == 0) {
+         
+          //  [[UIApplication sharedApplication] setApplicationIconBadgeNumber:-1];
+        }
+        
     }
 
 }

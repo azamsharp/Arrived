@@ -25,6 +25,7 @@
 		34475C2E1AFACA5E0041ABAF /* BaggagesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34475C2D1AFACA5E0041ABAF /* BaggagesTableViewController.m */; };
 		34475C321AFACB690041ABAF /* BaggageTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 34475C311AFACB690041ABAF /* BaggageTableViewCell.m */; };
 		34901A0B1AFAE9C500932649 /* AttachAnImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 34901A0A1AFAE9C500932649 /* AttachAnImage.png */; };
+		34E2AFC01B03D2E100A911EE /* BaggageDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 34E2AFBF1B03D2E100A911EE /* BaggageDetailsViewController.m */; };
 		34FDC9501AFC2377009A4DBC /* BaggageService.m in Sources */ = {isa = PBXBuildFile; fileRef = 34FDC94F1AFC2377009A4DBC /* BaggageService.m */; };
 /* End PBXBuildFile section */
 
@@ -58,6 +59,8 @@
 		34475C301AFACB690041ABAF /* BaggageTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaggageTableViewCell.h; sourceTree = "<group>"; };
 		34475C311AFACB690041ABAF /* BaggageTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaggageTableViewCell.m; sourceTree = "<group>"; };
 		34901A0A1AFAE9C500932649 /* AttachAnImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = AttachAnImage.png; sourceTree = "<group>"; };
+		34E2AFBE1B03D2E100A911EE /* BaggageDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaggageDetailsViewController.h; sourceTree = "<group>"; };
+		34E2AFBF1B03D2E100A911EE /* BaggageDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaggageDetailsViewController.m; sourceTree = "<group>"; };
 		34FDC94E1AFC2377009A4DBC /* BaggageService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaggageService.h; sourceTree = "<group>"; };
 		34FDC94F1AFC2377009A4DBC /* BaggageService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaggageService.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -141,6 +144,8 @@
 				343231FA1AF6B67100763A61 /* AddNewBaggageTableViewController.m */,
 				34475C2C1AFACA5E0041ABAF /* BaggagesTableViewController.h */,
 				34475C2D1AFACA5E0041ABAF /* BaggagesTableViewController.m */,
+				34E2AFBE1B03D2E100A911EE /* BaggageDetailsViewController.h */,
+				34E2AFBF1B03D2E100A911EE /* BaggageDetailsViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -263,6 +268,7 @@
 				34475C2B1AFA7D070041ABAF /* BaggageView.m in Sources */,
 				342F3E9A1AE6D0C500B6CE8D /* AppDelegate.m in Sources */,
 				34475C201AFA790C0041ABAF /* ImageService.m in Sources */,
+				34E2AFC01B03D2E100A911EE /* BaggageDetailsViewController.m in Sources */,
 				34475C2E1AFACA5E0041ABAF /* BaggagesTableViewController.m in Sources */,
 				34475C321AFACB690041ABAF /* BaggageTableViewCell.m in Sources */,
 				34475C231AFA79720041ABAF /* UIImage+Extensions.m in Sources */,
