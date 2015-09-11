@@ -150,43 +150,28 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OdX-Nb-b9f">
-                                            <rect key="frame" x="8" y="0.0" width="160" height="250"/>
+                                            <rect key="frame" x="8" y="0.0" width="160" height="234"/>
                                             <constraints>
-                                                <constraint firstAttribute="width" constant="160" id="KEG-1p-wL7"/>
+                                                <constraint firstAttribute="width" constant="160" id="X7X-ta-Bye"/>
                                             </constraints>
                                         </imageView>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pAI-Mf-FfG">
-                                            <rect key="frame" x="176" y="12" width="416" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="BL9-qg-xFQ"/>
-                                            </constraints>
+                                            <rect key="frame" x="176" y="8" width="416" height="27"/>
                                             <fontDescription key="fontDescription" name="AmericanTypewriter-Bold" family="American Typewriter" pointSize="22"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jDO-5o-0UV">
-                                            <rect key="frame" x="176" y="41" width="416" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="yly-5Z-vKa"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="12"/>
-                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCs-ww-Yte">
-                                            <rect key="frame" x="176" y="70" width="416" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="fsn-n2-jcZ"/>
-                                            </constraints>
+                                            <rect key="frame" x="176" y="43" width="416" height="14"/>
                                             <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="12"/>
                                             <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EJ5-Go-ewt">
-                                            <rect key="frame" x="176" y="99" width="416" height="90"/>
+                                            <rect key="frame" x="176" y="144" width="416" height="90"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S2n-Wl-rG9">
-                                                    <rect key="frame" x="8" y="26" width="400" height="38"/>
+                                                    <rect key="frame" x="178" y="35" width="60.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="Courier-Bold" family="Courier" pointSize="20"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
@@ -194,31 +179,42 @@
                                             </subviews>
                                             <color key="backgroundColor" red="0.22352941179999999" green="0.8980392157" blue="0.30196078430000001" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
-                                                <constraint firstItem="S2n-Wl-rG9" firstAttribute="trailing" secondItem="EJ5-Go-ewt" secondAttribute="trailingMargin" id="2VB-7y-K5c"/>
-                                                <constraint firstItem="S2n-Wl-rG9" firstAttribute="top" secondItem="EJ5-Go-ewt" secondAttribute="top" constant="26" id="MbW-Q2-rr8"/>
-                                                <constraint firstItem="S2n-Wl-rG9" firstAttribute="centerY" secondItem="EJ5-Go-ewt" secondAttribute="centerY" id="kyS-kq-Ord"/>
-                                                <constraint firstItem="S2n-Wl-rG9" firstAttribute="leading" secondItem="EJ5-Go-ewt" secondAttribute="leadingMargin" id="mni-ae-tQa"/>
+                                                <constraint firstAttribute="centerY" secondItem="S2n-Wl-rG9" secondAttribute="centerY" id="EjR-1F-2Em"/>
+                                                <constraint firstAttribute="centerX" secondItem="S2n-Wl-rG9" secondAttribute="centerX" id="SWi-lI-HB9"/>
                                             </constraints>
                                         </view>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCs-ww-Yte">
+                                            <rect key="frame" x="176" y="65" width="31.5" height="14"/>
+                                            <fontDescription key="fontDescription" name="AmericanTypewriter" family="American Typewriter" pointSize="12"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="pAI-Mf-FfG" firstAttribute="leading" secondItem="OdX-Nb-b9f" secondAttribute="trailing" constant="8" symbolic="YES" id="4Dt-Om-WW0"/>
-                                        <constraint firstItem="EJ5-Go-ewt" firstAttribute="top" secondItem="mCs-ww-Yte" secondAttribute="bottom" constant="8" symbolic="YES" id="Avu-Zf-Ii8"/>
-                                        <constraint firstItem="EJ5-Go-ewt" firstAttribute="leading" secondItem="mCs-ww-Yte" secondAttribute="leading" id="FHy-s2-1vQ"/>
-                                        <constraint firstItem="jDO-5o-0UV" firstAttribute="trailing" secondItem="GuK-XN-LlI" secondAttribute="trailingMargin" id="PHm-31-1Td"/>
-                                        <constraint firstItem="mCs-ww-Yte" firstAttribute="trailing" secondItem="EJ5-Go-ewt" secondAttribute="trailing" id="RGH-ae-tQ2"/>
-                                        <constraint firstItem="pAI-Mf-FfG" firstAttribute="top" secondItem="GuK-XN-LlI" secondAttribute="topMargin" constant="4" id="SOv-mp-Z8l"/>
-                                        <constraint firstItem="mCs-ww-Yte" firstAttribute="top" secondItem="jDO-5o-0UV" secondAttribute="bottom" constant="8" symbolic="YES" id="Vld-1f-Zkr"/>
-                                        <constraint firstItem="jDO-5o-0UV" firstAttribute="leading" secondItem="pAI-Mf-FfG" secondAttribute="leading" id="XlJ-zZ-PqK"/>
-                                        <constraint firstItem="jDO-5o-0UV" firstAttribute="trailing" secondItem="mCs-ww-Yte" secondAttribute="trailing" id="bbY-BF-Vhf"/>
-                                        <constraint firstItem="jDO-5o-0UV" firstAttribute="top" secondItem="pAI-Mf-FfG" secondAttribute="bottom" constant="8" symbolic="YES" id="c1F-bs-p2g"/>
-                                        <constraint firstItem="jDO-5o-0UV" firstAttribute="leading" secondItem="mCs-ww-Yte" secondAttribute="leading" id="ecf-oP-A0X"/>
-                                        <constraint firstItem="pAI-Mf-FfG" firstAttribute="trailing" secondItem="jDO-5o-0UV" secondAttribute="trailing" id="gMB-uh-pE7"/>
-                                        <constraint firstItem="OdX-Nb-b9f" firstAttribute="top" secondItem="GuK-XN-LlI" secondAttribute="top" id="hw9-oz-dG2"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="EJ5-Go-ewt" secondAttribute="bottom" constant="52.5" id="j6H-X2-diJ"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="OdX-Nb-b9f" secondAttribute="bottom" constant="-8.5" id="u3Z-9T-a31"/>
-                                        <constraint firstItem="OdX-Nb-b9f" firstAttribute="leading" secondItem="GuK-XN-LlI" secondAttribute="leadingMargin" id="uYx-1b-omB"/>
+                                        <constraint firstAttribute="trailing" secondItem="pAI-Mf-FfG" secondAttribute="trailing" constant="8" id="3Ci-X4-HOf"/>
+                                        <constraint firstItem="pAI-Mf-FfG" firstAttribute="top" secondItem="GuK-XN-LlI" secondAttribute="top" constant="8" id="69K-ya-MU4"/>
+                                        <constraint firstAttribute="bottom" secondItem="EJ5-Go-ewt" secondAttribute="bottom" constant="16" id="798-im-Lxb"/>
+                                        <constraint firstItem="pAI-Mf-FfG" firstAttribute="top" secondItem="GuK-XN-LlI" secondAttribute="top" constant="57" id="9cT-xb-l5o"/>
+                                        <constraint firstItem="pAI-Mf-FfG" firstAttribute="leading" secondItem="EJ5-Go-ewt" secondAttribute="leading" id="A9K-Sl-eee"/>
+                                        <constraint firstItem="OdX-Nb-b9f" firstAttribute="bottom" secondItem="EJ5-Go-ewt" secondAttribute="bottom" id="Gi4-Jh-6Qd"/>
+                                        <constraint firstItem="EJ5-Go-ewt" firstAttribute="leading" secondItem="OdX-Nb-b9f" secondAttribute="trailing" constant="8" id="Idx-oC-LYR"/>
+                                        <constraint firstItem="pAI-Mf-FfG" firstAttribute="leading" secondItem="mCs-ww-Yte" secondAttribute="leading" id="JfD-DZ-Fp4"/>
+                                        <constraint firstItem="jDO-5o-0UV" firstAttribute="top" secondItem="pAI-Mf-FfG" secondAttribute="bottom" constant="8" id="K3K-gW-VXs"/>
+                                        <constraint firstItem="pAI-Mf-FfG" firstAttribute="leading" secondItem="jDO-5o-0UV" secondAttribute="leading" id="OK1-hH-TZ4"/>
+                                        <constraint firstAttribute="trailing" secondItem="jDO-5o-0UV" secondAttribute="trailing" constant="8" id="TXP-Ya-7UZ"/>
+                                        <constraint firstItem="mCs-ww-Yte" firstAttribute="top" secondItem="jDO-5o-0UV" secondAttribute="bottom" constant="8" id="VXg-zc-iHV"/>
+                                        <constraint firstAttribute="trailing" secondItem="EJ5-Go-ewt" secondAttribute="trailing" constant="8" id="X4f-8V-0Vf"/>
+                                        <constraint firstItem="pAI-Mf-FfG" firstAttribute="top" secondItem="GuK-XN-LlI" secondAttribute="topMargin" constant="4" id="a5p-s1-qjT"/>
+                                        <constraint firstItem="OdX-Nb-b9f" firstAttribute="top" secondItem="GuK-XN-LlI" secondAttribute="top" id="iot-gm-csR"/>
+                                        <constraint firstItem="EJ5-Go-ewt" firstAttribute="top" secondItem="GuK-XN-LlI" secondAttribute="top" constant="144" id="tQ7-Vg-JWq"/>
+                                        <constraint firstItem="OdX-Nb-b9f" firstAttribute="leading" secondItem="GuK-XN-LlI" secondAttribute="leading" constant="8" id="zJX-0M-Hki"/>
                                     </constraints>
+                                    <variation key="default">
+                                        <mask key="constraints">
+                                            <exclude reference="9cT-xb-l5o"/>
+                                            <exclude reference="a5p-s1-qjT"/>
+                                        </mask>
+                                    </variation>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="hasArrivedLabel" destination="S2n-Wl-rG9" id="zhA-6S-RBV"/>

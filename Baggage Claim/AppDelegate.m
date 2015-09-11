@@ -33,7 +33,7 @@
     if(baggageData != nil) {
         
         Baggage *baggage = (Baggage *) [NSKeyedUnarchiver unarchiveObjectWithData:baggageData];
-        baggage.hasArrived = YES;
+        baggage.hasArrived = NO;
         baggage.hasNotificationBeenSent = YES;
         
         [BaggageService update:baggage];
